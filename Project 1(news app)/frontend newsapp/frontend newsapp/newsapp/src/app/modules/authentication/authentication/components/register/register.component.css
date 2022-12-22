@@ -1,0 +1,124 @@
+/* .register-block
+{
+    margin : auto;
+    width : 50%;
+    padding : 10px;
+    padding-top : 50px;
+    display : flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.register-input-full-width
+{
+    width : 100%;
+}
+
+h3
+{
+    text-align: center;
+} */
+.register-block
+{
+    margin : 1px;
+    width : 85%;
+    padding : 20px;
+    padding-top : 50px;
+    display : flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.register-input-full-width
+{
+    width : 100%;
+}
+.bg-white{
+    background-color: aqua;
+}
+
+h1
+{
+    text-align: center;
+    padding: 10px;
+    font-family: cursive;
+    font-size: 33px;
+}
+mat-card {
+  width: 50%;
+    margin: 2em auto;
+    text-align: center;
+    max-height: 600px;
+    float: left;
+    margin: 0px;
+    
+  }.header{
+    text-align: center;
+  
+  } .row {
+    padding-top: 5px;
+  } .row a {
+    margin-right: 8px;
+    text-align: center;
+  }
+  .login-button{
+      margin-bottom: 10px;
+  }
+.clear-type{
+    margin-top: 20px;
+}
+.register-button
+{
+    margin-top: 20px;
+}
+.register-user{
+    background-color: #6dabe4;
+}
+div{
+    display: inline-block;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
+span.b {
+    display: inline-block;
+}
+
+
+.mat-card{
+    margin: 0px;
+    box-shadow: none;
+
+}
+.newUser{
+    text-align: center;
+    
+    height: 450px;
+    width: 40%;
+    background-image: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    
+}
+.newUser h2{
+    color: white;
+    padding-top: 180px;
+    font-family: fangsong;
+    font-size: xxx-large;
+    font-weight: 600;
+}
+button{
+    border-radius: 22px;
+    text-align: center;
+    
+    background-color: lightyellow;
+    width: 100px;
+    height: 44px;
+    
+}

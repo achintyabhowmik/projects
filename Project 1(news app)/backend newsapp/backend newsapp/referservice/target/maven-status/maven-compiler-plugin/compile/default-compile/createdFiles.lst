@@ -1,0 +1,9 @@
+com\stackroute\referservice\config\SwaggerConfig.class
+com\stackroute\referservice\exception\NewsNotFoundException.class
+com\stackroute\referservice\repository\NewsRepository.class
+com\stackroute\referservice\exception\NewsAlreadyExistsException.class
+com\stackroute\referservice\service\NewsService.class
+com\stackroute\referservice\controller\NewsController.class
+com\stackroute\referservice\domain\News.class
+com\stackroute\referservice\ReferServiceApplication.class
+com\stackroute\referservice\service\NewsServiceImpl.class

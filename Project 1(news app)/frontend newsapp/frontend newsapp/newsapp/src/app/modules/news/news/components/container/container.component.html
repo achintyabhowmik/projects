@@ -1,0 +1,2 @@
+ <news-thumnail  *ngFor="let news of newsList" [favCheck]="favCheck" [news]="news" (addNews)="addToFavouriteList($event)" (deleteNews)='deleteNews($event)' (addNewsto)="addToReferedList($event)"></news-thumnail>
+  

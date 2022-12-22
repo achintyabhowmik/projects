@@ -1,0 +1,47 @@
+<div class="container">
+    <mat-card ><mat-card-content >
+       
+        <form class="login-form" [formGroup]="loginForm" [style.fontSize.px]="15">
+            <div class="login-block">
+                <div class="row">
+                    <h1 style="font-family: cursive;">Login</h1></div>
+                <div class="row">
+                    
+                    <mat-form-field class="login-input-full-width">
+                        <mat-label bg-primary><b>User Name</b></mat-label>
+        
+                        <input matInput placeholder="User Id" id="userId" formControlName="userId" required minlength="5" maxlength="10" class="userId">
+                        <mat-error *ngIf="loginForm.get('userId')!.errors?.required">User Name required</mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="login-input-full-width" >
+                        <mat-label><b>Password</b></mat-label>
+                        <input matInput [type]=" hide ? 'password' : 'text'" placeholder="Password" type="password" formControlName="password" id="password" required minlength="5" maxlength="10" class="password">
+                        <button  mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"[attr.aria-pressed]="hide">
+                        <mat-icon   >
+                            {{hide ? 'visibility_off' : 'visibility'}}
+                        </mat-icon>
+                    </button>
+                        <mat-error *ngIf="loginForm.get('password')!.errors?.required">Password required</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="row">
+                    <button class="login-button" type="submit" mat-flat-button color="primary" (click)="loginUser()" color="primary">Login<i class="fa fa-sign-in"></i></button>
+                    <!-- <button class="register-button" mat-flat-button color="primary" color="primary">Register<i class="fa fa-sign-in"></i></button> -->
+                </div>
+            </div>
+        </form></mat-card-content>
+        <div class="createAcc">
+            <span [routerLink]="['/register']">Create Account Here</span>
+        </div>
+        </mat-card>
+    <div class="newUser">
+        
+       
+        
+    </div>
+    
+    
+    </div>
+        

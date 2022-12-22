@@ -1,0 +1,48 @@
+
+
+
+<mat-toolbar class="mat-tool" >
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true " fxHide.gt-sm>
+      <mat-icon>home</mat-icon>
+    </button>
+        <span><b>NewsApp</b></span>
+        <span fxShow="true " fxHide.lt-md>
+      <button *ngIf="!auth.isTokenExpired() " class="search-button " mat-button class="search-button " [routerLink]="[ '/news/search'] "><b>Search</b></button>
+      <button *ngIf="!auth.isTokenExpired() " class="top-button " mat-button [routerLink]="[ '/news/top'] "><b>News-Flash</b></button>
+      <button *ngIf="!auth.isTokenExpired() " class="fav-button " mat-button [routerLink]="[ '/news/favourites'] "><b>Favourites</b></button>
+      <button *ngIf="!auth.isTokenExpired() " class="ref-button " mat-button [routerLink]="[ '/news/RecomondedNews'] "><b>Recommended</b></button>
+      
+    </span>
+        <span class="menu-spacer "></span>
+        <span *ngIf="!auth.isTokenExpired() " fxShow="true " fxHide.lt-md>
+          <button mat-button [matMenuTriggerFor]="menu" >{{auth.getname() }}</button>
+          <mat-menu #menu="matMenu">
+            <button  mat-menu-item (click)="logout() "><b>Logout</b></button>
+          </mat-menu>
+    </span>
+   
+        <span *ngIf="auth.isTokenExpired() " fxShow="true " fxHide.lt-md>
+      <button mat-button [routerLink]="[ '/login'] "><b>Login</b></button>
+    </span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container fxFlexFill>
+
+
+    <mat-sidenav #sidenav>
+
+
+        <mat-nav-list>
+            <a *ngIf="!auth.isTokenExpired() " mat-list-item [routerLink]="[ '/news/top'] ">News-Flash</a>
+            <a *ngIf="!auth.isTokenExpired() " mat-list-item [routerLink]="[ '/news/favourites'] ">Favourites</a>
+            <a *ngIf="!auth.isTokenExpired() " mat-list-item [routerLink]="[ '/news/search'] ">Search</a>
+            <a *ngIf="!auth.isTokenExpired() " mat-list-item (click)="logout() ">Logout</a>
+
+            <a *ngIf="!auth.isTokenExpired() " mat-list-item [routerLink]="[ '/news/RecomondedNews'] ">Recommended</a>
+        </mat-nav-list>
+
+    </mat-sidenav>
+<div class="bg-white">
+    <router-outlet></router-outlet></div>
+   

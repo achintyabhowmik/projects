@@ -1,0 +1,9 @@
+D:\news app project stackroute\backend newsapp\favouriteservice\src\main\java\com\stackroute\favouriteservice\exception\NewsNotFoundException.java
+D:\news app project stackroute\backend newsapp\favouriteservice\src\main\java\com\stackroute\favouriteservice\controller\NewsController.java
+D:\news app project stackroute\backend newsapp\favouriteservice\src\main\java\com\stackroute\favouriteservice\config\SwaggerConfig.java
+D:\news app project stackroute\backend newsapp\favouriteservice\src\main\java\com\stackroute\favouriteservice\exception\NewsAlreadyExistsException.java
+D:\news app project stackroute\backend newsapp\favouriteservice\src\main\java\com\stackroute\favouriteservice\repository\NewsRepository.java
+D:\news app project stackroute\backend newsapp\favouriteservice\src\main\java\com\stackroute\favouriteservice\service\NewsServiceImpl.java
+D:\news app project stackroute\backend newsapp\favouriteservice\src\main\java\com\stackroute\favouriteservice\service\NewsService.java
+D:\news app project stackroute\backend newsapp\favouriteservice\src\main\java\com\stackroute\favouriteservice\FavouriteServiceApplication.java
+D:\news app project stackroute\backend newsapp\favouriteservice\src\main\java\com\stackroute\favouriteservice\domain\News.java

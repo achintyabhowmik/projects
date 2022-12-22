@@ -1,0 +1,16 @@
+<br>
+<div class="flex-container " >
+    <form class="example-form">
+        <mat-form-field class="search-field " appearance="outline">
+            
+            <mat-label bg-primary>  <mat-placeholder>
+               <mat-icon style="font-size: 20px">search</mat-icon>
+            </mat-placeholder></mat-label>
+            <input id="search-button-input" matInput  placeholder="Search here" type="text" #box (keyup)="onEnter(box.value)">
+            
+        </mat-form-field>
+
+    </form>
+    <news-container [newsList]="newsLists"></news-container>
+</div>
+

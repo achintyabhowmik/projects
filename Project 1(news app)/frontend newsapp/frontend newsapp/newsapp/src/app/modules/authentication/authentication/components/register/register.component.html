@@ -1,0 +1,63 @@
+
+<div class="conataier">
+    
+    <mat-card ><mat-card-content >
+        
+    
+    
+        <form class="register-form" [formGroup]="registerForm" (ngSubmit)="registerUser()" [style.fontSize.px]="15">
+    
+    
+    
+    
+            <div class="register-block">
+                
+                
+                <div class="row">
+                    <h1 >Register Your Account</h1></div>
+                
+                <div class="row">
+                    <mat-form-field class="register-input-full-width"  >
+                        <mat-label bg-primary>First Name
+                        </mat-label>
+                        <i class="zmdi zmdi-account material-icons-name"></i>
+                        <input matInput placeholder="First Name" id="firstName" formControlName="firstName" required minlength="5" maxlength="10" >
+                        <mat-error *ngIf="registerForm.get('firstName')!.errors?.required">First Name is mandatory</mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="register-input-full-width" >
+                        <mat-label bg-primary>Last Name</mat-label>
+                        <input id="lastName" matInput placeholder="Last Name" formControlName="lastName" required minlength="5" maxlength="10" >
+                        <mat-error *ngIf="registerForm.get('lastName')!.errors?.required">Last Name is mandatory</mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="register-input-full-width" >
+                        <mat-label bg-primary><b>User Name</b></mat-label>
+                        <input id="userId" matInput placeholder="User Id" class="userId" formControlName="userId" required minlength="5" maxlength="10">
+                        <mat-error *ngIf="registerForm.get('userId')!.errors?.required">User Id is mandatory</mat-error>
+                    </mat-form-field>
+        
+                    <mat-form-field class="register-input-full-width" >
+                        <mat-label><b>Password</b></mat-label>
+                        <input id="password" matInput placeholder="Password" class="password" formControlName="password" type="password" required minlength="5" maxlength="10" >
+                        <mat-error *ngIf="registerForm.get('password')!.errors?.required">Password is mandatory</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="row">
+                    <button class="register-user" type="submit" mat-raised-button color="primary">Sign Up<i class="fa fa-sign-in"></i></button>
+                    <!-- <button class="clear-type" type="reset" mat-raised-button color="primary">Clear</button> -->
+                </div>
+                
+            </div>
+      
+        </form>
+    
+    </mat-card-content>    
+        
+    
+        </mat-card>
+    
+        <div class="newUser">
+            <h2>Already A User</h2>
+            <button [routerLink]="['/login']">Signin</button>
+        </div>
+            </div>
+        

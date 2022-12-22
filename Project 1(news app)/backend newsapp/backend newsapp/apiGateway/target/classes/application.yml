@@ -1,0 +1,26 @@
+server:
+ port: 8999
+ 
+ 
+ 
+ eureka:
+  instance:
+   hostname: localhost
+spring:
+ application:
+  name: apiGateway
+ cloud:
+  gateway:
+   routes:
+    - id: userservice
+      uri: lb://userservice
+      predicates:
+         - Path=/api/v1/userservice/**
+    - id: favouriteservice
+      uri: lb://favouriteservice
+      predicates:
+         - Path=/api/news/favourite/** 
+    - id: referservice
+      uri: lb://referservice
+      predicates:
+         - Path=/api/news/refer/** 

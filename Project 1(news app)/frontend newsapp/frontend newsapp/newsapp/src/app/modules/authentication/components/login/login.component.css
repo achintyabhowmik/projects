@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons"); 
+
+    .login-block {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        padding-top: 10px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-items: center; 
+        
+    }
+    
+    .login-input-full-width {
+        width: 80%;
+        
+    }
+    
+    h3 {
+        text-align: center;
+    }
+    
+   mat-card {
+        max-width: 600px;
+        margin: 2em auto;
+        text-align: center;
+        max-height: 600px;
+      }.header{
+        text-align: center;
+      
+      } .row {
+        padding-top: 5px;
+      } .row a {
+        margin-right: 8px;
+        text-align: center;
+      }
+      .login-button{
+          margin-bottom: 10px;
+      }
+      .login-block {
+        margin : 1px;
+        width : 85%;
+        padding : 20px;
+        padding-top : 50px;
+        display : flex;
+        align-content: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+    
+    .login-input-full-width {
+        width: 80%;
+        
+    }
+    
+    h3 {
+        text-align: center;
+    }
+    
+   mat-card {
+        max-width: 600px;
+        margin: 2em auto;
+        text-align: start;
+        max-height: 600px;
+        padding-left: 25px;
+             }.header{
+        text-align: center;
+      
+      } .row {
+        padding-top: 5px;
+      } .row a {
+        margin-right: 8px;
+        text-align: center;
+      }
+      .login-button{
+          margin-bottom: 10px;
+      }
+      .mat-card{
+        margin: 0px;
+        box-shadow: none;
+    
+    }
+    div{
+      display: flex;
+  }
+  
+.newUser{
+background-image: url("https://cdn2.vectorstock.com/i/1000x1000/42/26/woman-sitting-working-at-a-laptop-cartoon-vector-28914226.jpg");
+
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    width: 50%;
+}
+
+.newUser h2{
+  color: white;
+  padding-top: 180px;
+  font-family: fangsong;
+  font-size: xxx-large;
+  font-weight: 600;
+}
+.newUser h2{
+  color: black;
+  
+}
+span{
+  cursor: pointer;
+}
+.login-button{
+  background-color: #5FD5DB;
+}
+  
